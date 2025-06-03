@@ -74,3 +74,100 @@ header .container h1{
     margin-left: 10px;
   }
 }
+
+main {
+    margin-top: 30px;
+}
+
+.search-container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.search-container i {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 20px;
+}
+
+.search-section input{
+    flex: 1;
+    padding: 18px 25px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* them a vao thi minh co the custom do mo */
+    font-size: 15px;
+    color: white;
+    padding-left: 45px;
+}
+
+.search-container:focus-within{
+    /* background-color: #0f3460; */
+    transform: translateY(-5px);
+}
+.search-container:focus-within input{
+    border-color: 2px solid #7877c6;
+    box-shadow: 0 0 30px rgba(120, 119, 198, 0.5), 0 0 10px rgba(120, 119, 198, 0.3);
+}
+
+input::placeholder {
+    color: white;
+    
+}
+
+
+/* ----------------------------CARD SECTION------------------------------------ */
+main .section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .card-section{
+    margin-top: 50px;
+}
+main .section-header h2{
+    font-size: 35px;
+}
+
+main .track-section{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+main .track-card-container{
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main .track-section .track-card{
+    width: calc(100%/3 - 20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter:  blur(20px);
+    border-radius: 20px;
+    border: 1px solid #9198df;
+}
+main .track-section .track-card img{
+    width: 100px;
+    height: 250px;
+    border-radius: 35px;
+}
+
+main .track-section .track-card h3{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+main .track-section .track-card p{
+    opacity: 0.8;
+}
+
