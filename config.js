@@ -19,7 +19,7 @@ const SPOTIFY_CONFIG = {
 
 console.log(`
 🎵 SPORTIFY WEB PLAYER
-📝 Cấu hình:
+📝 Cấu hình: 
 - Client ID: ${SPOTIFY_CONFIG.CLIENT_ID ? "✅" : "❌"}
 - Client Secret: ${SPOTIFY_CONFIG.CLIENT_SECRET ? "✅" : "❌"}
 - Redirect URI: ${SPOTIFY_CONFIG.REDIRECT_URI}

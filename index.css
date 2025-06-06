@@ -125,49 +125,55 @@ input::placeholder {
 
 
 /* ----------------------------CARD SECTION------------------------------------ */
-main .section-header{
+main .card-section{
+    margin-top: 50px;
+}
+
+main .card-section .section-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-main .card-section{
-    margin-top: 50px;
-}
-main .section-header h2{
-    font-size: 35px;
+
+main .card-section .section-header h2{
+    font-size: 25px;
 }
 
-main .track-section{
+.track-section{
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
-main .track-card-container{
+
+.track-section .track-card-container{
     max-width: 350px;
     margin: 0 auto;
     padding: 20px;
+    
 }
 
-main .track-section .track-card{
-    width: calc(100%/3 - 20px);
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter:  blur(20px);
+.track-section .track-card{
+    border: 1px solid #9190df;
+    width: calc(100%/3 -20px);
     border-radius: 20px;
-    border: 1px solid #9198df;
-}
-main .track-section .track-card img{
-    width: 100px;
-    height: 250px;
-    border-radius: 35px;
+    background-color: rgb(225,225,225,0.2);
 }
 
-main .track-section .track-card h3{
-    margin: 10px 0;
+.track-section .track-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.track-section .track-card h3{
     font-weight: bold;
+    margin: 10px 0;
 }
 
-main .track-section .track-card p{
+.track-section .track-card p{
     opacity: 0.8;
 }
-
